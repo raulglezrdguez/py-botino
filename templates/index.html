@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>BoTino</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+  </style>
+  <link rel="stylesheet" href="./templates/botino.css">
+</head>
+
+<body>
+
+  <h2>Ejemplo de chat con Botino</h2>
+  <p>Haga clic en el botón Conversar con Botino.</p>
+  <p>Escriba su mensaje y haga clic en el botón Enviar mensaje.</p>
+  <p>Este es un bot que da información sobre los servicios que brinda Joven Club, las efemérides, las biografías de nuestros mártires, el coronavirus, resuelve operaciones matemáticas simples... hasta ahora.</p>
+  <p>Para utilizarlo en su página web debe:</p>
+  <ul>
+    <li>Crear un div con un id.</li>
+    <li>Crear un script con los parámetros src, url, div_id e images correspondientes.</li>
+  </ul>
+  <p>Vea el contenido de esta página como ejemplo.</p>
+  <p>Puede comunicarse desde su dispositivo móvil con android. Para ello utilice <a href="/templates/tinobot.apk" download> TinoBot.apk </a>. Debe tener instalado en su dispositivo la <strong>Salida de texto a voz o Síntesis de voz (Motor de texto a voz)</strong> y el <strong>Idioma y entrada de texto</strong>. </p>
+
+  <div id="botino">
+  </div>
+
+
+  <script src="./templates/botino.js" url="http://{{ip}}:8088/getResponse/" div_id="botino" images="./templates/">
+  </script>
+
+  <script src="./templates/json5.min.js"></script>
+
+</body>
+
+</html>
