@@ -1,0 +1,3 @@
+# ChatBot: BoTino
+
+A chatbot with python: using Flask, spacy, opencv...
